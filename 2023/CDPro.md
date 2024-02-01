@@ -1018,7 +1018,7 @@ https://github.com/owenThurm/CDPro-maxgrok-sheepghosty/blob/727d97a924b75c76c896
 #### Description:
 The `vote` function does not check if the `endTime` of the proposal has passed. This means that users can vote for proposals after the `endTime`. Since there is no `execute` implementation or documentation protocol the impact is speculative, but users can influence the `proposal` results after the `endTime` has been reached.
   
-```
+```solidity
 function test_propose_vote_after_end() public {
 
 	// set up --->
